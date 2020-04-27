@@ -1,0 +1,5 @@
+google-cloud-sdk/
+*.tar.gz
+*.pdf
+servidor/
+.DS_Store

@@ -1,0 +1,33 @@
+{% extends 'index.html' %} 
+
+{% block body %} 
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %} 
+        {% endif %}       
+    {% endwith %}
+
+    <form action="/add" method="post">
+        <fieldset>
+            <legend>Añadir nuevo contacto</legend>
+
+            <label for="name">Nombre</label>
+            <input type="text" name="name">
+
+            <label for="phone">Phone</label>
+            <input type="text" name="phone">
+
+            <label for="email">Email</label>
+            <input type="text" name="email">
+
+            <button type="submit" name="button">Añadir</button>
+        </fieldset>
+    </form>
+
+<p>
+    <a href="/">Regresar</a>
+</p>    
+{% endblock %}
