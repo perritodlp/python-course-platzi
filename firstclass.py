@@ -9,4 +9,4 @@ class Estudiante(object):
         return "Mi nombre es %s y tengo %i" % (self.nombre, self.edad)
 
 e = Estudiante("Fernando",47)
-print e.hola()        
+print(e.hola())        
