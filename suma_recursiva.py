@@ -17,12 +17,12 @@ def recursive_sum(sum, start):
         else:   
             try:
                 sum = int(option) + sum
-                print('La suma va en: {}'.format(sum))
-
-                return recursive_sum(sum, start)
-
             except ValueError:
                 print('Se produjo un error. No tenemos el dato de la suma, ya que lo ingresado no es un entero.')
+            else:
+                print('La suma va en: {}'.format(sum))
+
+                return recursive_sum(sum, start)                    
 
 if __name__ == '__main__':
     print('*** SUMANDO RECURSIVAMENTE ***')
