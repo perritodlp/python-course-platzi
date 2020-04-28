@@ -22,7 +22,7 @@ def protected_func():  # B
     print('Tu contraseña es correcta.')
 
 if __name__ == '__main__':
-    password = str(raw_input('Ingresa tu contraseña: '))
+    password = str(input('Ingresa tu contraseña: '))
 
     # Forma 1
     #wrapper = protected(protected_func)
