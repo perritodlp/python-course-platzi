@@ -44,7 +44,7 @@ def run():
     lamp = Lamp(is_turned_on=False)
 
     while True:
-        command = str(raw_input('''
+        command = str(input('''
            ¿Qué desea hacer?
 
            [p]render
